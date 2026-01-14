@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/images/favicon-16x16.png" type="image/x-icon">
+    <title>Accueil | TOURISTIQUE-TOURS</title>
+    <link rel="stylesheet" href="assets/css/design.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Header -->
+    <header class="bg-white shadow">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <!-- Logo -->
+                <a class="navbar-brand d-flex align-items-center" href="#">
+                    <span class="fw-bold text-black">Touristique-Tours</span>
+                </a>
+    
+                <!-- Hamburger Menu (responsive) -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <!-- Menu Items -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active  fw-semibold" href="index.html">Accueil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-semibold" href="apropos.html">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-semibold" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-semibold" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  fw-semibold" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+
+    <!---------------------------------------------- Section -------------------------------------------------------------------->
+    <!-- BLoc 1 -->
+    <section>
+        <div id="tourCarousel" class="carousel slide" data-bs-ride="carousel">
+            <!-- Indicateurs -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#tourCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <!-- Contenu du carrousel -->
+            <div class="carousel-inner">
+                <!-- Première image -->
+                <div class="carousel-item active position-relative">
+                    <img src="assets/images/beach.jpg" class="d-block w-100" alt="Plage">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h5 class="text-light">Explorez des plages paradisiaques</h5>
+                        <p>Découvrez des destinations inoubliables au bord de la mer.</p>
+                    </div>
+                </div>
+    
+                <!-- Deuxième image -->
+                <div class="carousel-item position-relative">
+                    <img src="assets/images/hotel.jpg" class="d-block w-100" alt="Montagnes">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h5 class="text-light">Aventures dans une chambre de luxe</h5>
+                        <p>Émerveillez-vous devant des panoramas à couper le souffle.</p>
+                    </div>
+                </div>
+    
+                <!-- Troisième image -->
+                <div class="carousel-item position-relative">
+                    <img src="assets/images/beach.png" class="d-block w-100" alt="Ville">
+                    <div class="overlay"></div>
+                    <div class="carousel-caption d-md-block">
+                        <h5 class="text-light">Voyages urbains dans le monde univers</h5>
+                        <p>Plongez dans la vie vibrante des grandes métropoles.</p>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Contrôles du carrousel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#tourCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Précédent</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#tourCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Suivant</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- BLoc 2 -->
+    <section>
+        <div class="container">
+            <div class="row py-5">
+                <!-- Première carte -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-sun text-white" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-touristiquetours">Plages de rêve</h5>
+                            <p class="card-text">
+                                Détendez-vous sur les plus belles plages, entre soleil, sable doré et eaux cristallines.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deuxième carte -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-camera text-white" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-touristiquetours">Excursions guidées</h5>
+                            <p class="card-text">
+                                Explorez des paysages époustouflants avec nos guides experts qui vous raconteront l’histoire locale.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Troisième carte -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-compass text-white" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-touristiquetours">Aventures en pleine nature</h5>
+                            <p class="card-text">
+                                Partez à l’aventure dans des forêts tropicales, volcans majestueux et parcs naturels.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quatrième carte -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="card shadow-sm text-center h-100">
+                        <div class="card-body">
+                            <div class="icon mb-3">
+                                <i class="bi bi-wind text-white" style="font-size: 2.5rem;"></i>
+                            </div>
+                            <h5 class="card-title fw-bold text-touristiquetours">Découverte culturelle</h5>
+                            <p class="card-text">
+                                Immergez-vous dans les traditions locales, la gastronomie et l’artisanat authentique.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLoc 3 -->
+    <section>
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <div class="col-lg-6 mb-4 mb-lg-0 position-relative">
+                    <img src="assets/images/grandBaie.jpg" alt="Vidéo Touristique" class="img-fluid rounded shadow">
+                </div>
+                <!-- Texte -->
+                <div class="col-lg-6 text-center text-lg-start">
+                    <h2 class="fw-bold mb-4">Un lieu parfait pour s'évader</h2>
+                    <p class="text-muted mb-4">
+                        Plongez dans un univers où chaque destination raconte une histoire unique. Explorez des paysages à couper le souffle, des plages dorées baignées par le soleil aux montagnes majestueuses enveloppées de mystère. Embarquez pour des aventures inoubliables, imprégnées de découvertes culturelles, de rencontres authentiques et d’une sérénité totale. Laissez-vous séduire par l’émerveillement à chaque étape de votre voyage.
+                    </p>                    
+                    <a href="#" class="btn btn-touristiquetours text-uppercase fw-bold px-4 py-2">En savoir plus</a>
+                    <!-- Bouton Play --> <br>
+                    <a href="https://www.youtube.com/watch?v=9QX4xj5urLQ&ab_channel=BmDrone27" class=" " target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-play-circle-fill text-touristiquetours d-none d-md-block" style="font-size: 4rem;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLoc 4 -->
+    <section >
+        <div class="container">
+            <div class="row py-5">
+                <!-- Première carte -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tour-card-custom position-relative overflow-hidden shadow-sm">
+                        <img src="assets/images/tour.jpg" alt="Europe Tour" class="img-fluid">
+                        <div class="card-content-custom position-absolute">
+                            <h5 class="card-title-custom text-white">Circuit en Europe</h5>
+                            <p class="card-text-custom text-white">Découvrez les villes historiques et les paysages enchanteurs de l'Europe.</p>
+                            <span class="price-custom text-white">$1850</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Deuxième carte -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tour-card-custom position-relative overflow-hidden shadow-sm">
+                        <img src="assets/images/tour.jpg" alt="Ultimate Thailand" class="img-fluid">
+                        <div class="card-content-custom position-absolute">
+                            <h5 class="card-title-custom text-white">La Thaïlande Ultime</h5>
+                            <p class="card-text-custom text-white">Explorez la beauté exotique et la culture vibrante de la Thaïlande.</p>
+                            <span class="price-custom text-white">$1350</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Troisième carte -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tour-card-custom position-relative overflow-hidden shadow-sm">
+                        <img src="assets/images/tour.jpg" alt="Discover India" class="img-fluid">
+                        <div class="card-content-custom position-absolute">
+                            <h5 class="card-title-custom text-white">Découvrez l'Inde</h5>
+                            <p class="card-text-custom text-white">Plongez dans la spiritualité et les merveilles de l'Inde éternelle.</p>
+                            <span class="price-custom text-white">$2650</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Quatrieme carte -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tour-card-custom position-relative overflow-hidden shadow-sm">
+                        <img src="assets/images/tour.jpg" alt="Europe Tour" class="img-fluid">
+                        <div class="card-content-custom position-absolute">
+                            <h5 class="card-title-custom text-white">Circuit en Europe</h5>
+                            <p class="card-text-custom text-white">Découvrez les villes historiques et les paysages enchanteurs de l'Europe.</p>
+                            <span class="price-custom text-white">$1850</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Cinquieme carte -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tour-card-custom position-relative overflow-hidden shadow-sm">
+                        <img src="assets/images/tour.jpg" alt="Ultimate Thailand" class="img-fluid">
+                        <div class="card-content-custom position-absolute">
+                            <h5 class="card-title-custom text-white">La Thaïlande Ultime</h5>
+                            <p class="card-text-custom text-white">Explorez la beauté exotique et la culture vibrante de la Thaïlande.</p>
+                            <span class="price-custom text-white">$1350</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Sixieme carte -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="tour-card-custom position-relative overflow-hidden shadow-sm">
+                        <img src="assets/images/tour.jpg" alt="Discover India" class="img-fluid">
+                        <div class="card-content-custom position-absolute">
+                            <h5 class="card-title-custom text-white">Découvrez l'Inde</h5>
+                            <p class="card-text-custom text-white">Plongez dans la spiritualité et les merveilles de l'Inde éternelle.</p>
+                            <span class="price-custom text-white">$2650</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BLoc 5 -->
+    <section>
+        <div class="container-fluid">
+            <div class="row ">
+                <!-- Image à gauche -->
+                <div class="col-lg-6 mb-lg-0 p-0 m-0">
+                    <img src="assets/images/chine.jpg" alt="Témoignage" class="img-fluid shadow">
+                </div>
+                <!-- Témoignage à droite -->
+                <div class="col-lg-6 bg-touristiquetours py-5 align-items-center">
+                    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <!-- Slide 1 -->
+                            <div class="carousel-item active text-center">
+                                <h2 class="fw-bold mb-3 text-white">Nos Meilleurs Témoignages</h2>
+                                <h4 class="mb-3 text-black">Les Pyramides Anciennes</h4>
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="text-white mx-auto" style="max-width: 600px;">
+                                    Découvrez la majesté des pyramides anciennes avec une immersion culturelle et historique inégalée. 
+                                    Une aventure qui vous laissera émerveillé et connecté à l’histoire.
+                                </p>
+                                <p class="fw-bold mt-4 mb-2">Roman Paolera</p>
+                                <img src="assets/images/user.jpg" alt="Roman Paolera" class="rounded-circle shadow" style="width: 80px; height: 80px;">
+                            </div>
+                            <!-- Slide 2 -->
+                            <div class="carousel-item text-center">
+                                <h2 class="fw-bold mb-3 text-white">Nos Meilleurs Témoignages</h2>
+                                <h4 class="mb-3 text-black">La Jungle Mystique</h4>
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                                <p class="text-white mx-auto" style="max-width: 600px;">
+                                    Explorez les profondeurs de la jungle avec des guides experts. Chaque instant vous rapprochera de la nature dans toute sa splendeur.
+                                </p>
+                                <p class="fw-bold mt-4 mb-2">Sophia Loren</p>
+                                <img src="assets/images/user.jpg" alt="Sophia Loren" class="rounded-circle shadow" style="width: 80px; height: 80px;">
+                            </div>
+                            <!-- Slide 3 -->
+                            <div class="carousel-item text-center">
+                                <h2 class="fw-bold mb-3 text-white">Nos Meilleurs Témoignages</h2>
+                                <h4 class="mb-3 text-black">Le Désert Doré</h4>
+                                <div class="stars mb-3">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                                <p class="text-white mx-auto" style="max-width: 600px;">
+                                    Partez à la découverte des dunes dorées et des couchers de soleil magiques. Une aventure qui restera gravée dans votre mémoire.
+                                </p>
+                                <p class="fw-bold mt-4 mb-2">John Doe</p>
+                                <img src="assets/images/user.jpg" alt="John Doe" class="rounded-circle shadow" style="width: 80px; height: 80px;">
+                            </div>
+                        </div>
+                        <!-- Contrôles -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Précédent</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Suivant</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLoc 6 -->
+    <section>
+        <div class="container">
+            <div class="row py-5 text-center align-items-center">
+                <!-- Titre -->
+                <div class="col-lg-12 mb-4">
+                    <h2 class="fw-bold text-primary">Découvrez le Monde avec Nous</h2>
+                </div>
+                <!-- Paragraphe -->
+                <div class="col-lg-12">
+                    <p class="text-muted mx-auto" style="max-width: 800px;">
+                        Explorez des destinations de rêve, des plages paradisiaques aux montagnes majestueuses. Plongez dans des cultures riches, découvrez des saveurs authentiques et créez des souvenirs inoubliables à chaque voyage. Avec notre expertise, chaque aventure devient unique.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLoc 7 -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Image 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item position-relative overflow-hidden">
+                        <img src="assets/images/grandBaie.jpg" alt="Image 1" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Destination 1</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item position-relative overflow-hidden">
+                        <img src="assets/images/grandBaie.jpg" alt="Image 2" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Destination 2</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item position-relative overflow-hidden">
+                        <img src="assets/images/grandBaie.jpg" alt="Image 3" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Destination 3</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 4 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item position-relative overflow-hidden">
+                        <img src="assets/images/grandBaie.jpg" alt="Image 4" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Destination 4</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 5 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item position-relative overflow-hidden">
+                        <img src="assets/images/grandBaie.jpg" alt="Image 5" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Destination 5</h5>
+                        </div>
+                    </div>
+                </div>
+                <!-- Image 6 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="gallery-item position-relative overflow-hidden">
+                        <img src="assets/images/grandBaie.jpg" alt="Image 6" class="img-fluid rounded">
+                        <div class="gallery-overlay">
+                            <h5 class="text-white">Destination 6</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- BLoc 8 -->
+    <section class="py-5 tour-section-bg text-light text-center" style="background-image: url('assets/images/beach.jpg');">
+        <div class="tour-background-overlay"></div>
+        <div class="container position-relative">
+            <div class="row mb-4">
+                <!-- Titre principal -->
+                <div class="col-lg-12">
+                    <h2 class="fw-bold text-white">Choisissez Votre Tour</h2>
+                    <p class="text-white mt-3">
+                        Trouvez votre prochaine aventure de voyage et rendez-la inoubliable. Explorez la faune, profitez des plages ou réservez une croisière. Découvrez nos destinations populaires.
+                    </p>
+                </div>
+            </div>
+            <div class="row g-4">
+                <!-- Self-Guided -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mx-auto">
+                    <div class="tour-icon-box">
+                        <i class="bi bi-airplane fs-1 text-white"></i>
+                        <h5 class="mt-3 fw-bold text-white">Autoguidé</h5>
+                    </div>
+                </div>
+                <!-- Cruises -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mx-auto">
+                    <div class="tour-icon-box">
+                        <i class="bi bi-airplane fs-1 text-white"></i>
+                        <h5 class="mt-3 fw-bold text-white">Croisières</h5>
+                    </div>
+                </div>
+                <!-- Adventure -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mx-auto">
+                    <div class="tour-icon-box">
+                        <i class="bi bi-airplane fs-1 text-white"></i>
+                        <h5 class="mt-3 fw-bold text-white">Aventure</h5>
+                    </div>
+                </div>
+                <!-- Wildlife -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mx-auto">
+                    <div class="tour-icon-box">
+                        <i class="bi bi-tree fs-1 text-white"></i>
+                        <h5 class="mt-3 fw-bold text-white">Nature</h5>
+                    </div>
+                </div>
+                <!-- Seaside -->
+                <div class="col-lg-2 col-md-4 col-sm-6 mx-auto">
+                    <div class="tour-icon-box">
+                        <i class="bi bi-sun fs-1 text-white"></i>
+                        <h5 class="mt-3 fw-bold text-white">Bord de Mer</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BLoc 9 -->
+    <section >
+        <div class="container">
+            <div class="row align-items-center py-5">
+                <!-- Texte d'introduction -->
+                <div class="col-lg-6 mb-4 mb-lg-0 text-center text-lg-start">
+                    <h2  style="font-weight: lighter !important;">Inscrivez-vous à notre <strong style="color: #FF7F50; font-weight: lighter;">Newsletter</strong></h2>
+                    <p class="text-muted">
+                        Recevez les dernières nouvelles et offres exclusives sur les meilleures destinations touristiques directement dans votre boîte mail.
+                    </p>
+                </div>
+                <!-- Formulaire d'inscription -->
+                <div class="col-lg-6">
+                    <form class="row g-2">
+                        <div class="col-8">
+                            <input 
+                                type="email" 
+                                class="form-control form-control-lg" 
+                                placeholder="Entrez votre email" 
+                                aria-label="Entrez votre email" 
+                                required>
+                        </div>
+                        <div class="col-4">
+                            <button type="submit" class="btn btn-touristiquetours btn-lg w-100">S'inscrire</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
+            <div class="row">
+                <!-- 1ère Colonne : Nom du Site et Description -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold text-uppercase text-touristiquetours">Touristique-Tours</h5>
+                    <p class="text-light">
+                        Découvrez le monde avec nous. Nous offrons des expériences uniques pour rendre vos voyages mémorables.
+                    </p>
+                </div>
+                <!-- 2ème Colonne : Pages -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="fw-bold text-uppercase text-touristiquetours">Pages</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-light text-decoration-none footer-lien">Accueil</a></li>
+                        <li><a href="apropos.html" class="text-light text-decoration-none footer-lien">À propos</a></li>
+                        <li><a href="service.html" class="text-light text-decoration-none footer-lien">Services</a></li>
+                        <li><a href="blog.html" class="text-light text-decoration-none footer-lien">Blog</a></li>
+                        <li><a href="contact.html" class="text-light text-decoration-none footer-lien">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- 3ème Colonne : Contact -->
+                <div class="col-lg-4 col-md-12 mb-4">
+                    <h5 class="fw-bold text-uppercase text-touristiquetours">Contact</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="bi bi-envelope me-2"></i> 
+                            <a href="mailto:contact@islandmanager.com" class="text-light text-decoration-none">contact@islandmanager.com</a>
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-telephone me-2"></i> 
+                            +261 32 00 000 00
+                        </li>
+                        <li class="mb-2">
+                            <i class="bi bi-geo-alt me-2"></i> 
+                            Nosy Be, DIANA, Madagascar
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Ligne de copyright -->
+            <div class="text-center mt-4">
+                <p class="mb-0">© 2024 Touristique-Tours. Tous droits réservés. Par <a href="#" class="text-decoration-none text-white"> <strong>IslandManager</strong></a></p>
+            </div>
+        </div>
+    </footer>
+    
+
+   <!-- Bootstrap JS -->
+   <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+   <!--  JS  pour BLOC 5 -->
+   <script>
+        // Initialisation du carrousel Bootstrap
+        const testimonialCarousel = document.querySelector('#testimonialCarousel');
+        const bsCarousel = new bootstrap.Carousel(testimonialCarousel, {
+            interval: 5000, // Change de slide toutes les 5 secondes
+            wrap: true // Boucle infinie
+        });
+    </script>
+    <!--  JS  pour BLOC 7 -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const galleryItems = document.querySelectorAll(".gallery-item");
+
+            galleryItems.forEach((item, index) => {
+                setTimeout(() => {
+                    item.style.opacity = "1";
+                    item.style.transform = "translateY(0)";
+                }, index * 150); // Décalage pour chaque image
+            });
+        });
+    </script>
+
+
+    
+</body>
+</html>

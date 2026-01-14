@@ -1,0 +1,369 @@
+@import url('assets/css/design.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--gray-light);
+}
+
+/*-----------------------------------------------------------------------
+# Header
+*-----------------------------------------------------------------------/
+/* Header style */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+.navbar-brand span {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.navbar-nav .nav-link {
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--blue-ocean) !important;
+}
+.active{
+    color: var(--blue-ocean) !important;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navbar-brand span {
+        font-size: 1.2rem;
+    }
+    .nav-link{
+        margin: 0 !important;
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+}
+
+/*-----------------------------------------------------------------------
+# Footer
+*-----------------------------------------------------------------------*/
+footer {
+    border-top: 4px solid var(--blue-ocean);
+}
+
+footer ul li a:hover {
+    color: var(--green-nature);
+    text-decoration: underline;
+}
+
+footer .bi {
+    color: var(--sunset-orange);
+}
+.footer-lien:hover{
+    color: var(--blue-ocean) !important;
+}
+/*-----------------------------------------------------------------------
+# BLoc 1
+*-----------------------------------------------------------------------*/
+.carousel-caption{
+    margin-bottom: 160px;
+}
+.carousel-caption h5 {
+    font-size: 2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.carousel-item img {
+    height: 500px; /* Ajuster selon tes besoins */
+    object-fit: cover;
+    object-position: center; /* Centre l'image */
+}
+/* Overlay sombre */
+.carousel-item .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Couche noire avec 50% d'opacité */
+    z-index: 1; /* Place la couche au-dessus de l'image */
+}
+
+/* Position des légendes au-dessus de l'overlay */
+.carousel-caption {
+    position: relative;
+    z-index: 2; /* Place les légendes au-dessus de l'overlay */
+}
+@media (max-width:767px){
+    .carousel-caption{
+        margin-bottom: 90px;
+    }
+}
+/*-----------------------------------------------------------------------
+# BLoc 2
+*-----------------------------------------------------------------------*/
+.card {
+    background-color: #f8f9fa; /* Fond clair pour un look moderne */
+    border: 1px solid #e0e0e0; /* Légère bordure */
+    border-radius: 8px; /* Coins arrondis */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    border: 1px solid var(--blue-ocean); /* Légère bordure */
+}
+
+.card:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Ombre accentuée */
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 70px;
+    background-color: var(--blue-ocean); /* Fond vert pâle */
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 3
+*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+# Bloc 4
+*-----------------------------------------------------------------------*/
+/* Styles pour les cartes */
+.tour-card-custom {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    border-bottom: 3px solid var(--blue-ocean);
+}
+
+.tour-card-custom img {
+    width: 100%;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: brightness(1); /* Image normale */
+}
+
+.tour-card-custom:hover img {
+    transform: scale(1.1); /* Zoom léger au survol */
+    filter: brightness(0.7); /* Image assombrie */
+}
+
+/* Contenu de la carte */
+.card-content-custom {
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Fond noir transparent */
+    transition: all 0.3s ease;
+    transform: translateY(100%); /* Hors de la vue */
+}
+
+.tour-card-custom:hover .card-content-custom {
+    transform: translateY(0); /* Monte dans la vue au survol */
+}
+
+/* Titre et paragraphe */
+.card-title-custom {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.card-text-custom {
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.tour-card-custom:hover .card-text-custom {
+    opacity: 1; /* Apparait au survol */
+}
+
+/* Prix */
+.price-custom {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 5
+*-----------------------------------------------------------------------*/
+/* Section générale */
+.bg-dark {
+    background-color: #121212 !important; /* Fond sombre */
+    color: #ffffff;
+}
+
+/* Étoiles */
+.stars i {
+    font-size: 1.2rem;
+}
+
+/* Témoignage */
+.rounded-circle {
+    border: 3px solid var(--sunset-orange); /* Contour doré autour de l'image utilisateur */
+    padding: 5px;
+}
+
+/* Contrôles de carrousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 6
+*-----------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------
+# Bloc 7
+*-----------------------------------------------------------------------*/
+/* Effet général pour les images */
+.gallery-item img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1); /* Zoom léger */
+    filter: brightness(0.7); /* Assombrissement de l'image */
+}
+
+/* Overlay pour les titres */
+.gallery-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Couche noire transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+    opacity: 1; /* Affiche l'overlay au survol */
+}
+
+.gallery-overlay h5 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+.gallery-item {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 8
+*-----------------------------------------------------------------------*/
+/* Section avec image de fond */
+.tour-section-bg {
+     /* Image de fond */
+    background-size: cover; /* Remplit toute la section */
+    background-position: center; /* Centrage de l'image */
+    background-attachment: fixed; /* Positionnement fixe */
+    position: relative;
+    z-index: 1;
+}
+
+/* Filtre noir */
+.tour-background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Filtre noir semi-transparent */
+    z-index: 2;
+}
+
+/* Position des contenus au-dessus du filtre */
+.container {
+    position: relative;
+    z-index: 3; /* Place le contenu au-dessus de l'overlay */
+}
+
+/* Icônes */
+.tour-icon-box {
+    text-align: center;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tour-icon-box i {
+    font-size: 2.5rem;
+    color: #FF7F50; /* Couleur des icônes */
+}
+
+.tour-icon-box:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    color: #fff;
+}
+
+.tour-icon-box h5 {
+    margin-top: 15px;
+    font-size: 1rem;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 9
+*-----------------------------------------------------------------------*/
+/* Section newsletter */
+form input {
+    border: 2px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    font-size: 1rem;
+}
+
+form input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+form button {
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}

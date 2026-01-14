@@ -1,0 +1,263 @@
+@import url('assets/css/design.css');
+
+/*-----------------------------------------------------------------------
+# Bloc 1
+*-----------------------------------------------------------------------/
+/* Section avec background image */
+.about-section {
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Position fixe */
+    position: relative;
+    z-index: 1;
+}
+
+/* Overlay noir léger */
+.about-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Filtre noir semi-transparent */
+    z-index: 1;
+}
+
+/* Contenu au-dessus de l'overlay */
+.about-section .container-fluid {
+    position: relative;
+    z-index: 2;
+}
+
+/* Titre principal */
+.about-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Breadcrumbs */
+.breadcrumbs {
+    font-size: 1rem;
+}
+
+.breadcrumbs a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.breadcrumbs a:hover {
+    color: #ffc107; /* Couleur dorée au survol */
+}
+
+.breadcrumbs span {
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 2
+*-----------------------------------------------------------------------/
+/* Section générale */
+.features-section {
+    background-color: #f8f9fa; /* Fond clair pour un look moderne */
+}
+
+/* Box pour chaque feature */
+.feature-box {
+    background: #fff; /* Fond blanc */
+    padding: 20px;
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre légère */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-box:hover {
+    transform: translateY(-10px); /* Légère élévation au survol */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Ombre plus prononcée */
+}
+
+/* Icônes */
+.feature-icon i {
+    color: #ffc107; /* Couleur des icônes */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.feature-box:hover .feature-icon i {
+    transform: scale(1.2); /* Légère augmentation de taille au survol */
+    color: #f39c12; /* Couleur accentuée */
+}
+
+/* Titres */
+.feature-box h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Paragraphes */
+.feature-box p {
+    font-size: 0.95rem;
+    color: #666;
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 3
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# Bloc 4
+*-----------------------------------------------------------------------/
+/* Logos */
+.logo-item {
+    filter: grayscale(100%); /* Logos en noir et blanc */
+    opacity: 0.8;
+    transition: filter 0.3s ease, transform 0.3s ease, opacity 0.3s ease;
+}
+
+.logo-item:hover {
+    filter: grayscale(0); /* Annule le noir et blanc au survol */
+    opacity: 1;
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/*-----------------------------------------------------------------------
+# Bloc 5
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# Bloc 6
+*-----------------------------------------------------------------------/
+/* Section Témoignages */
+.custom-testimonial-section {
+    background-color: #f8f9fa; /* Fond clair */
+    padding: 50px 0;
+}
+
+/* Carte Témoignage */
+.testimonial-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Photo Témoignage */
+.testimonial-photo {
+    width: 80px !important;
+    height: 80px !important;
+    object-fit: cover;
+    border: 3px solid #007bff; /* Contour bleu */
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-photo {
+    transform: scale(1.1); /* Zoom léger au survol */
+}
+
+/* Texte Témoignage */
+.testimonial-text {
+    font-size: 1.2rem;
+    color: #6c757d;
+    font-style: italic;
+    line-height: 1.8;
+}
+
+/* Auteur Témoignage */
+.testimonial-author {
+    font-size: 1rem;
+    color: #007bff;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Contrôles du carrousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+}
+
+
+
+/*-----------------------------------------------------------------------
+# BLoc 7
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# Bloc 8
+*-----------------------------------------------------------------------/
+/* Section Bannière */
+.custom-banner-section {
+     /* Remplacez avec votre image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    padding: 100px 0;
+    color: #ffffff;
+}
+
+/* Filtre noir */
+.custom-banner-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Filtre noir semi-transparent */
+    z-index: 1;
+}
+
+/* Texte dans la bannière */
+.custom-banner-section .container {
+    position: relative;
+    z-index: 2; /* Pour que le texte soit au-dessus du filtre */
+}
+
+/* Slogan */
+.custom-banner-section .tagline {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #ff6f61; /* Couleur accentuée */
+    margin-bottom: 20px;
+}
+
+/* Titre principal */
+.custom-banner-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.custom-banner-section h1 .highlight {
+    color: #ffdc73; /* Couleur dorée pour un mot en surbrillance */
+}
+
+/*-----------------------------------------------------------------------
+# 
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# 
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# 
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# 
+*-----------------------------------------------------------------------/
+
+/*-----------------------------------------------------------------------
+# 
+*-----------------------------------------------------------------------/
