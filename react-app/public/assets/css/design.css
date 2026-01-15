@@ -1,0 +1,56 @@
+:root {
+    /* Couleurs principales */
+    --blue-ocean: #007BFF;
+    --dark-blue-ocean: #0056A8;
+    --green-nature: #28A745;
+    --light-green-nature: #4CAF50;
+    --sand-gold: #F4A261;
+    --soft-sand: #D4A373;
+    --white-off: #F8F9FA;
+    --white-pure: #FFFFFF;
+
+    /* Couleurs secondaires */
+    --sunset-orange: #FF7F50;
+    --warm-orange: #E76F51;
+    --gray-light: #E0E0E0;
+    --gray-dark: #6C757D;
+
+    /* Typographie */
+    --font-primary: 'Montserrat', sans-serif;
+    --font-secondary: 'Roboto', sans-serif;
+
+    /* Ombres */
+    --box-shadow-light: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --box-shadow-medium: 0 6px 10px rgba(0, 0, 0, 0.15);
+
+    /* Transitions */
+    --transition-speed: 0.3s;
+}
+
+/* Boutton*/
+.btn-touristiquetours {
+    background-color: var(--sunset-orange) !important;
+    color: var(--white-pure) !important;
+    font-family: var(--font-secondary) !important;
+    border: none !important;
+    padding: 10px 20px !important;
+    border-radius: 5px !important;
+    cursor: pointer !important;
+    transition: background-color var(--transition-speed) !important;
+}
+
+.btn-touristiquetours:hover {
+    background-color: var(--warm-orange) !important;
+}
+/* Test*/
+.text-touristiquetours{
+    color: var(--blue-ocean) !important;
+}
+/* Titre */
+h1, h2, h3, h4, h5, h6{
+    color: var(--blue-ocean) !important;
+}
+/* Arriere-Plan */
+.bg-touristiquetours{
+    background-color: var(--blue-ocean) !important;
+}
